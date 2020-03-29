@@ -36,7 +36,7 @@ namespace CronjobAPIWallet
                         break;
                     }
                 }
-                Thread.Sleep(50000);
+                Thread.Sleep(300000);
             }
         }
     }
