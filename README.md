@@ -27,8 +27,8 @@
 ```
 # Check Get Money
 #### หากต้องการเช็คว่ารายการได้เป็นการโอนผ่าน ทรูมันนี่วอลเลท ให้ใช้ If
-- $transfer["original_type"] == "transfer"
-- $transfer["original_action"] == "creditor"
+- $transfer["original_type"] == "transfer" //โอนผ่านเเอพทรูมันนี่วอลเลท
+- $transfer["original_action"] == "creditor" //เช็คว่าเป็นรายการโอนเข้ารายการที่เราโอนออกจากบัญชีจะไม่เเสดงครับ
 
 # GetTransaction Value
 - $transfer_id //เลขอ้างอิง
