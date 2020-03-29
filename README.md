@@ -31,15 +31,10 @@
 - เเก้ไข Loop Time [ตรงนี้](https://github.com/ekkamon/class-truewallet-php/blob/master/CronjobAPIWallet/Program.cs) บรรทัด: 39 // 1000 = วินาที
 
 #### access_token.php
-```php
-<?php
-  require "Truewallet.php";
-  $tw = new TrueWalletClass($phone, $password);
-  $tw->setAccessToken($access_token);
-  $data = $tw->GetProfile();
-  print($data["code"]);
-?>
-```
+- ใส่ข้อมูล $phone
+- ใส่ข้อมูล $password
+- ใส่ข้อมูล $access_token
+##### นำไฟล์อัพลง xampp, apache เเละ เอาลิ้งค์มาใส่ใน Cronjob 
 
 # Help my Truemoney Wallet Class .-.
 - โครง Class ตัวนี้นำมาจาก [likecyber](https://github.com/likecyber)
