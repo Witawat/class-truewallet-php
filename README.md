@@ -25,6 +25,21 @@
   }
 ?>
 ```
+# Check Get Money
+#### หากต้องการเช็คว่ารายการได้เป็นการโอนผ่าน ทรูมันนี่วอลเลท ให้ใช้ If
+- $transfer["original_type"] == "transfer"
+- $transfer["original_action"] == "creditor"
+
+# GetTransaction Value
+- $transfer_id //เลขอ้างอิง
+- $money //จำนวนเงิน
+- $sender_phone //เบอร์คนที่โอนมา
+
+```php
+  $transfer_id	= $values["data"]["section4"]["column2"]["cell1"]["value"];
+	$money = $values["data"]["section3"]["column1"]["cell1"]["value"];
+	$sender_phone = $values["data"]["section2"]["column1"]["cell1"]["value"];
+```
 
 # Example Cronjob Windows
 - เเก้ไข Url [ตรงนี้](https://github.com/ekkamon/class-truewallet-php/blob/master/CronjobAPIWallet/Program.cs) บรรทัด: 17
