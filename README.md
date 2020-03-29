@@ -36,9 +36,9 @@
 - $sender_phone //เบอร์คนที่โอนมา
 
 ```php
-  $transfer_id	= $values["data"]["section4"]["column2"]["cell1"]["value"];
-	$money = $values["data"]["section3"]["column1"]["cell1"]["value"];
-	$sender_phone = $values["data"]["section2"]["column1"]["cell1"]["value"];
+$transfer_id	= $values["data"]["section4"]["column2"]["cell1"]["value"];
+$money = $values["data"]["section3"]["column1"]["cell1"]["value"];
+$sender_phone = $values["data"]["section2"]["column1"]["cell1"]["value"];
 ```
 
 # Example Cronjob Windows
